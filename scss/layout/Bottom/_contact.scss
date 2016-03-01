@@ -1,0 +1,43 @@
+/* ---- Contact Info Section ---- */
+
+.contact-info {
+	padding: 35px 15px 15px 15px;
+	background: $color-prim;
+
+	h3 {
+		text-transform: uppercase;
+		@include text($size: 1.1em, $weight: 900);
+
+		@include tablet {
+			padding-bottom: 20px;
+		}
+	}
+
+	ul {
+		padding: 15px 0;
+	}
+
+	ul li {
+		display: inline-block;
+		padding: 0 10px;
+	}
+
+	@include tablet {
+		padding: 45px 15px;
+		width: 70%;
+    	margin: 0 auto;
+	}
+
+	p {
+		@include tablet {
+			font-size: 1.3em;
+			margin: 20px auto;
+		}
+	}
+
+	@include desktop {
+		flex: 1 30%;
+	}
+}
+
+

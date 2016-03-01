@@ -1,0 +1,22 @@
+// Contact buttons
+
+a.social {
+	display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+}
+
+a.twitter {
+  	background-image: url(#{$path-img}/twitter.svg);
+}
+
+a.linkedin {
+  	background-image: url(#{$path-img}/linkedin.svg);
+}
+
+a.github {
+  	background-image: url(#{$path-img}/github.svg);
+}

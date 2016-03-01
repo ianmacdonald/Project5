@@ -1,0 +1,40 @@
+/* ---- Portfolio Section ---- */
+
+.portfolio {
+	padding-bottom: 40px;
+	background: $color-sec;
+
+	@include tablet {
+		display: flex;
+		flex-flow: row wrap;
+		padding: 0 20px;
+
+		figure {
+			flex: 1 50%;
+			max-width: 50%;
+		}
+	}
+
+	@include desktop {
+		figure {
+			flex: 1 30%;
+		}
+	}
+}
+
+.portfolio-title {
+	background: $color-sec;
+
+	h3 {
+		text-transform: uppercase;
+		padding: 45px 0;
+		@include text($size: 1.1em, $weight: 900);
+		margin: 0;
+	}
+}
+
+.item img {
+	@include tablet {
+		max-width: 97%;
+	}
+}

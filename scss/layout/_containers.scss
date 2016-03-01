@@ -1,0 +1,7 @@
+.layout-wrapper {
+	background: $color-prim;
+
+	@include desktop {
+		padding: 0 20px;
+	}
+}

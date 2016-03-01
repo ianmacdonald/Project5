@@ -1,0 +1,37 @@
+/* =================================
+	Variables
+==================================== */
+
+
+// Description Color Variables
+
+$white : #fff;
+$black : #000;
+$grey : #F9F9F9;
+$light-grey : #F5F5F5;
+$baby-blue : #81D0E2;
+$dark-blue : #05182a;
+
+// Functional color Variables
+
+$color-prim : $baby-blue;
+$color-sec	: $white;
+$color-body : $grey;
+$color-body-desktop : $light-grey;
+$color-dark-text : $dark-blue;
+
+// Font Stack Variables
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-roboto : 'Roboto Condensed', $stack-sans-serif;
+
+$font-weight : 900;
+
+// Asset path
+
+$path-img : '../img';
+
+// Media Query
+
+$tablet-width: 768px;
+$desktop-width: 1024px;

@@ -1,0 +1,52 @@
+/* ---- Intro Section ---- */ 
+
+.intro {
+	color: $color-dark-text;
+	padding-bottom: 15px;
+}
+
+.intro-box {
+	padding: 20px 0 10px 0; 
+	
+	@include tablet {
+		display: flex;
+		align-items: flex-start;
+		padding: 20px 20px 60px 20px;
+	}
+
+	p {
+		padding: 0 20px;
+
+		@include tablet {
+			text-align: left;
+			font-size: 1.2em;
+			margin-top: 0;
+			padding: 0 15px 0 0;
+			order: -1;
+		}
+
+		@include desktop {
+			padding: 0 25px 0 0;
+		}
+	}
+
+	@include desktop {
+		padding: 20px 0 60px 0;
+		margin: 0 20px;
+	}
+}
+
+.portrait {
+	margin-bottom: 10px;
+    width: 65%;
+    box-shadow: 0 0 2px rgba(29, 84, 107, 0.25);
+
+    @include tablet {
+    	width: 40%;
+		margin-top: 8px;
+    }
+
+    @include desktop {
+    	width: 42%;
+    }
+}

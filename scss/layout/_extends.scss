@@ -1,0 +1,18 @@
+
+
+// Center text
+%center {
+	text-align: center;
+}
+
+// Flex
+
+%flex-between {
+	display: flex;
+    justify-content: space-between;
+}
+
+%flex-around {
+	display: flex;
+    justify-content: space-around;
+}

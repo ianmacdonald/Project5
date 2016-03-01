@@ -1,0 +1,84 @@
+/* ---- Navigation ---- */
+
+.name {
+	@include text($size: 1.5em, $l-height: null, $weight: #{$font-weight}, $color: #{$color-dark-text});
+	margin: 12px 0;
+	text-shadow: 1px 1px #E8E8E8;
+
+	@include tablet {
+		margin: 25px 0 8px 0;
+	}
+
+	@include desktop {
+		margin: 0;
+	}
+}
+
+.main-nav {
+	width: 90%;
+	padding-bottom: 5px;
+	margin: 10px auto;
+	background: $color-prim;
+
+	li {
+		margin-top: 5px;
+		padding: 5px 0;
+		@include text($weight: #{$font-weight});
+		background: $color-sec;
+
+		@include tablet {
+			@include text($weight: #{$font-weight});
+			background: #81D0E2;
+		}
+
+		@include desktop {
+			@include text($weight: #{$font-weight});
+			margin-left: 40px;
+		}
+	}
+
+	a {
+		@extend %center;
+		padding: 10px 15px;
+		@include text($size: .85em, $weight: #{$font-weight});
+		text-transform: uppercase;
+
+		@include desktop {
+			padding: 0;
+		}
+	}
+
+	a:hover {
+	color: gold;
+	}
+
+	@include tablet {
+		display: flex;
+		justify-content: center;
+    	margin-top: 0;
+	}
+
+	@include tablet {
+		width: initial;
+		margin: 0;
+	}
+}
+
+.main-header {
+	background: $color-prim;
+	padding-top: .35em;
+	padding-bottom: .35em;
+
+	@include tablet {
+		display: flex;
+		flex-direction: column;
+    	padding-bottom: 20px;
+	}
+
+	@include desktop {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 50px 20px 0 20px;
+		margin: 0 auto 0 auto;
+	}
+}
