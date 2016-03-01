@@ -4,6 +4,10 @@
 	padding-bottom: 40px;
 	background: $color-sec;
 
+	figcaption {
+		@extend %center;
+	}
+
 	@include tablet {
 		display: flex;
 		flex-flow: row wrap;
@@ -28,12 +32,14 @@
 	h3 {
 		text-transform: uppercase;
 		padding: 45px 0;
-		@include text($size: 1.1em, $weight: 900);
 		margin: 0;
+		@include text($size: 1.1em, $weight: 900);
 	}
 }
 
 .item img {
+	@extend %box-shadow;
+
 	@include tablet {
 		max-width: 97%;
 	}

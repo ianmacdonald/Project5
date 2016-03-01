@@ -16,3 +16,16 @@
 	display: flex;
     justify-content: space-around;
 }
+
+%nav-toggle {
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+// Blue border
+
+%box-shadow {
+	box-shadow: -1px 2px 2px 0px rgba(0,0,0,0.5); 
+}

@@ -20,3 +20,24 @@ a.linkedin {
 a.github {
   	background-image: url(#{$path-img}/github.svg);
 }
+
+
+.nav-hide {
+	@extend %nav-toggle;
+	border-width: 0 50px 25px 50px;
+	border-color: transparent transparent #309BBE transparent;
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.nav-show {
+	@extend %nav-toggle;
+	border-width: 25px 50px 0 50px;
+	border-color: #309BBE transparent transparent transparent;
+
+	@include tablet {
+		display: none;
+	}
+}

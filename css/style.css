@@ -50,6 +50,22 @@ figcaption {
       padding: 0 50px;
       margin-bottom: 50px; } }
 
+body, .main-nav a, .portfolio figcaption {
+  text-align: center; }
+
+.mobile-footer-nav {
+  display: flex;
+  justify-content: space-between; }
+
+.nav-hide, .nav-show {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-style: solid; }
+
+.layout-wrapper, .portrait, .item img {
+  box-shadow: -1px 2px 2px 0px rgba(0, 0, 0, 0.5); }
+
 /* ---- Navigation ---- */
 .name {
   font-size: 1.5em;
@@ -124,6 +140,9 @@ figcaption {
     .layout-wrapper {
       padding: 0 20px; } }
 
+.content-wrapper {
+  background: #81D0E2; }
+
 /* ---- Intro Section ---- */
 .intro {
   color: #05182a;
@@ -186,9 +205,9 @@ figcaption {
   .portfolio-title h3 {
     text-transform: uppercase;
     padding: 45px 0;
+    margin: 0;
     font-size: 1.1em;
-    font-weight: 900;
-    margin: 0; }
+    font-weight: 900; }
 
 @media (min-width: 768px) {
   .item img {
@@ -275,13 +294,6 @@ figcaption {
   .footer-name {
     margin: 0; } }
 
-body, .main-nav a {
-  text-align: center; }
-
-.mobile-footer-nav {
-  display: flex;
-  justify-content: space-between; }
-
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -298,5 +310,19 @@ a.linkedin {
 
 a.github {
   background-image: url(../img/github.svg); }
+
+.nav-hide {
+  border-width: 0 50px 25px 50px;
+  border-color: transparent transparent #309BBE transparent; }
+  @media (min-width: 768px) {
+    .nav-hide {
+      display: none; } }
+
+.nav-show {
+  border-width: 25px 50px 0 50px;
+  border-color: #309BBE transparent transparent transparent; }
+  @media (min-width: 768px) {
+    .nav-show {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */

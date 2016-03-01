@@ -28,14 +28,14 @@
 
 		@include tablet {
 			@include text($weight: #{$font-weight});
-			background: #81D0E2;
+			background: $color-prim;
 		}
 
 		@include desktop {
 			@include text($weight: #{$font-weight});
 			margin-left: 40px;
 		}
-	}
+	} 
 
 	a {
 		@extend %center;

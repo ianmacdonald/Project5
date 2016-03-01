@@ -1,7 +1,12 @@
 .layout-wrapper {
 	background: $color-prim;
-
+	@extend %box-shadow;
+	
 	@include desktop {
 		padding: 0 20px;
 	}
+}
+
+.content-wrapper {
+	background: $color-prim;
 }
