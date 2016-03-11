@@ -1,7 +1,7 @@
 
 // Text Mixins
 
-@mixin text($size: null, $l-height: null, $weight: null, $color: null) {
+@mixin text($size: $font-size, $l-height: null, $weight: null, $color: null) {
   font-size: $size;
   line-height: $l-height;
   font-weight: $weight;
@@ -21,4 +21,5 @@
     @content;
   }
 }
+
 

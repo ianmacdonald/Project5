@@ -88,14 +88,17 @@ body, .main-nav a, .portfolio figcaption {
   .main-nav li {
     margin-top: 5px;
     padding: 5px 0;
+    font-size: 1em;
     font-weight: 900;
     background: #fff; }
     @media (min-width: 768px) {
       .main-nav li {
+        font-size: 1em;
         font-weight: 900;
         background: #81D0E2; } }
     @media (min-width: 1024px) {
       .main-nav li {
+        font-size: 1em;
         font-weight: 900;
         margin-left: 40px; } }
   .main-nav a {
@@ -248,6 +251,7 @@ body, .main-nav a, .portfolio figcaption {
     padding-bottom: 30px; } }
 
 .mobile-footer-nav {
+  font-size: 1em;
   font-weight: bold;
   color: #81D0E2;
   width: 90%;
