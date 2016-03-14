@@ -8,7 +8,7 @@
 
 body {
 	font-family: $stack-roboto;
-	@include text($size: 1em, $l-height: 1.6, $color: $color-dark-text);
+	@include text($size: #{$font-size}, $l-height: 1.6, $color: #{$color-dark-text});
 	margin: 0;
 	@extend %center;
 	background: $color-body;
@@ -28,7 +28,7 @@ ul {
 }
 
 p {
-	font-size: 1em;
+	@include text($size: #{$font-size});
 }
 
 a {
@@ -49,7 +49,7 @@ figcaption {
 
 	h3 {
 		margin-bottom: 10px;
-		@include text($size: 1.1em, $weight: 700);
+		@include text($size: #{$title-size}, $weight: 700);
 	}
 
 	@include tablet {

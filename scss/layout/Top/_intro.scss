@@ -19,7 +19,7 @@
 
 		@include tablet {
 			text-align: left;
-			font-size: 1.2em;
+			@include text($size: #{$tablet-size});
 			margin-top: 0;
 			padding: 0 15px 0 0;
 			order: -1;

@@ -6,7 +6,7 @@
 
 	h3 {
 		text-transform: uppercase;
-		@include text($size: 1.1em, $weight: 900);
+		@include text($size: #{$title-size}, $weight: #{$font-weight});
 
 		@include tablet {
 			padding-bottom: 20px;
@@ -30,7 +30,7 @@
 
 	p {
 		@include tablet {
-			font-size: 1.3em;
+			@include text($size: #{$tablet-size});
 			margin: 20px auto;
 		}
 	}

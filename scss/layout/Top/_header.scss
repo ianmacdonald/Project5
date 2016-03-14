@@ -1,7 +1,7 @@
 /* ---- Navigation ---- */
 
 .name {
-	@include text($size: 1.5em, $l-height: null, $weight: #{$font-weight}, $color: #{$color-dark-text});
+	@include text($size: #{$nav-name}, $l-height: null, $weight: #{$font-weight}, $color: #{$color-dark-text});
 	margin: 12px 0;
 	text-shadow: 1px 1px #E8E8E8;
 
@@ -40,7 +40,7 @@
 	a {
 		@extend %center;
 		padding: 10px 15px;
-		@include text($size: .85em, $weight: #{$font-weight});
+		@include text($size: #{$font-size}, $weight: #{$font-weight});
 		text-transform: uppercase;
 
 		@include desktop {
